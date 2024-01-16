@@ -1,1 +1,1 @@
-{"s0": {"password": "sL3xNI03", "status": "running", "port_map": {"8081/tcp": 54925, "8080/tcp": 54811}, "container_id": "597d7ca7a79873575333be353d421a787c8f4e298103f6c5e2be063983d2512f"}}
+{"s0": {"password": "sL3xNI03", "status": "running", "port_map": {"8081/tcp": 49767, "8080/tcp": 54205}, "container_id": "2fde9669d2ea04fcd5c8a11b5050897cf826abec811d006010b7c3f6dd956ef0"}}

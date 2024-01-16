@@ -13,7 +13,7 @@ from nsenter import Namespace
 import docker
 import socket
 from contextlib import closing
-from config import *
+from map import *
 
 import shutil
 
@@ -24,8 +24,8 @@ api_client = docker.APIClient()
 
 default_config = {
     "constrain": {
-        "cpu_quota": int(0.5*100000),
-        "mem_limit": "1g",
+        "cpu_quota": int(1*100000),
+        "mem_limit": "2g",
         "memswap_limit": "4g"
     },
     "network": {
@@ -125,7 +125,7 @@ class Container:
         image = "lucaszy/webide:latest"
         # cmd = 'bash -c "%s && %s"' % ("export PASSWORD=123456",
         #                               "code-server --bind-addr 0.0.0.0:8081")
-        cmd = "\"bash -c 'export PASSWORD=%s && code-server --bind-addr 0.0.0.0:8081'\"" % (self.info["password"])
+        cmd = "bash -c 'export PASSWORD=%s && code-server --bind-addr 0.0.0.0:8080'" % (self.info["password"])
         print("cmd", cmd)
         # cmd = "\"bash -c \'export PASSWORD='%s' && code-server --bind-addr 0.0.0.0:8081\'\"" % (self.info["password"])
         constrain = {}
