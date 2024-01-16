@@ -1,8 +1,8 @@
-# TODO: 请根据示例，配置老师和学生的账号
+# TODO: 请根据示例，配置老师和学生的账号(注意：请务必保持账号每一项信息的完整性，不允许是空字符串！)
 users = {
     "teacher": {
         "name": "Teacher",
-        "mail": " ",
+        "mail": " teacher",
         "username": "teacher",
         "name_py": "Teacher",
         "class": "1",
